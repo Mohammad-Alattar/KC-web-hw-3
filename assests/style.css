@@ -1,0 +1,106 @@
+:root {
+    --theme: rgb(73, 28, 73);
+}
+body {
+    background-color: white   !important;
+}
+.theme {
+    background-color: var(--theme);
+}
+.btn {
+    margin-right: 10px;
+    background-color: white !important;
+    border-color: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+}
+
+.nav {
+    border: solid 10px transparent;
+}
+
+#search {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* boxes */
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    border: solid 10px black;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50px;    
+    animation: float 6s ease-in-out infinite;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+#total {
+    text-align: center;
+    color: var(--theme);
+}
+
+.box h3, p {
+    text-align: center;
+}
+.box img {
+    border-radius: 50px;
+}
+.add {
+    color: white;
+    background-color: var(--theme);
+    border-radius: 50px;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    border-color: var(--theme);
+}
+.cart {
+    display: flex;
+}
+.item {
+    border: black 10px solid;
+    border-radius: 50px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: inline-flex;
+    justify-self: center;
+    
+}
+.item img{
+    border-radius: 50px;
+}
+#about {
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-self: center;
+}
+#contact {
+    text-align: center;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-10px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
